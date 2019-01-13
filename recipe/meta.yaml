@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 build:
-  number: 0
+  number: 1
   skip: True  # [not linux]
 
 requirements:
@@ -15,7 +15,7 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - cabal
-    - ghc
+    - ghc-bootstrap
     - gmp
 test:
   commands:
